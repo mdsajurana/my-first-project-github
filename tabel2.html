@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practis table</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 700px;
+        }
+        td, th{
+            border: 2px solid black;
+            padding: 10px 20px;
+            text-align: right;
+        }
+        td:empty::after{
+            content:"";
+            display: block;
+            height: 16px;
+        }
+        th:first-child, td:first-child{
+            text-align: left;
+        }
+        th,.saju{
+            background-color: rgb(231, 200, 158);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>P 1</th>
+                <th>P 2</th>
+                <th>P 3</th>
+                <th>P 4</th>
+                <th>P 5</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td class="saju">01/2018</td>
+                <td>$500.00</td>
+                <td rowspan="3">$320.00</td>
+                <td>$320.00</td>
+                <td>$50.00</td>
+                <td rowspan="3">$1,500.00</td>
+            </tr>
+            <tr>
+                <td class="saju">02/2018</td>
+                <td>$620.00</td>
+                <!-- <td></td> -->
+                <td>$420.00</td>
+                <td>$55.00</td>
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <td class="saju">03/2018</td>
+                <td>$720.00</td>
+                <!-- <td></td> -->
+                <td>$450.00</td>
+                <td>$130.00</td>
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <td class="saju">04/2018</td>
+                <td>$725.00</td>
+                <td rowspan="3">$450.00</td>
+                <td>$450.00</td>
+                <td>$350.00</td>
+                <td rowspan="3">$2,900.00</td>
+            </tr>
+            <tr>
+                <td class="saju">05/2018</td>
+                <td>$840.00</td>
+                <!-- <td></td> -->
+                <td>$455.00</td>
+                <td>$480.00</td>
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <td class="saju">06/2018</td>
+                <td>$860.00</td>
+                <!-- <td></td> -->
+                <td>$500.00</td>
+                <td>$20.00</td>
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <td class="saju">07/2018</td>
+                <td>$510.00</td>
+                <td rowspan="3">$120.00</td>
+                <td>$150.00</td>
+                <td>$25.00</td>
+                <td rowspan="3">$105.00</td>
+            </tr>
+            <tr>
+                <td class="saju">08/2018</td>
+                <td>$480.00</td>
+                <!-- <td></td> -->
+                <td>$120.00</td>
+                <td>$30.00</td>
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <td class="saju">09/2018</td>
+                <td>$470.00</td>
+                <!-- <td></td> -->
+                <td>$200.00</td>
+                <td>$40.00</td>
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <td class="saju">10/2018</td>
+                <td>$580.00</td>
+                <td rowspan="3">$550.00</td>
+                <td>$340.00</td>
+                <td>$150.00</td>
+                <td rowspan="3">$3,150.00</td>
+            </tr>
+            <tr>
+                <td class="saju">11/2018</td>
+                <td>$730.00</td>
+                <!-- <td></td> -->
+                <td>$355.00</td>
+                <td>$200.00</td>
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <td class="saju">12/2018</td>
+                <td>$850.00</td>
+                <!-- <td></td> -->
+                <td>$490.00</td>
+                <td>$290.00</td>
+                <!-- <td></td> -->
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
+
+
+
+
+
+
